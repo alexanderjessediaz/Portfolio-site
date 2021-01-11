@@ -8,7 +8,7 @@ export default function Post(){
 
     useEffect(()=> {
         sanityClient
-            .fetch(`*[_type == "post]{
+            .fetch(`*[_type == "post"]{
                 title,
                 slug,
                 mainImage{
@@ -28,7 +28,7 @@ export default function Post(){
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog</h2>
-                <div className="grid md:grid-col-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData &&
                         postData.map((post, index)=>(
                         <article>
@@ -43,7 +43,11 @@ export default function Post(){
                                 className="w-full h-full rounded-r object-cover absolute"
                                 />
                             <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                                <h3 className="text-grey-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded" >{post.title}</h3>
+                                <h3 
+                                className="text-grey-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded" 
+                                >
+                                    {post.title}
+                                </h3>
                             </span>
                         </span>
                         </Link>
