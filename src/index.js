@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 import './Styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import BlockContent from '@sanity/block-content-to-react'
+// const client = require('@sanity/client')({
+//   projectId: '3qxytl5i',
+//   dataset: 'production',
+//   useCdn: true
+// })
+
+// const serializers = {
+//   types: {
+//     code: props => (
+//       <pre data-language={props.node.language}>
+//         <code>{props.node.code}</code>
+//       </pre>
+//     )
+//   }
+// }
 
 ReactDOM.render(
   <React.StrictMode>
