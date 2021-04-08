@@ -1,12 +1,12 @@
 import React from "react"
-import image from "../Color-wallpaper-wide-background-620x388.jpg"
+import image from "../Images/Drawing-1.sketchpad.png"
 
 export default function Home(){
     return (
         <main>
             <img 
                 src={image} 
-                alt="color-wallpaper" 
+                alt="drawing" 
                 className="absolute object-cover w-full h-full"
             />
             <section 

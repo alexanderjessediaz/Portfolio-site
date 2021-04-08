@@ -1,11 +1,12 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 // import {Home, About, SinglePost, Post, Project} from "./components/Index";
-import Home from "./components/Home";
-import About from "./components/About";
-import SinglePost from "./components/SinglePost";
-import Post from "./components/Post";
-import Project from "./components/Project";
-import NavBar from "./components/NavBar";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import SinglePost from "./Components/SinglePost";
+import Post from "./Components/Post";
+import Project from "./Components/Project";
+import NavBar from "./Components/NavBar";
+
 
 function App() {
   return (
