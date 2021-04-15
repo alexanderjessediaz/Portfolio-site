@@ -8,10 +8,20 @@ const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
     return builder.image(source)
 }
+const serializers = {
+  types: {
+    code: props => (
+      <pre data-language={props.node.language}>
+        <code>{props.node.code}</code>
+      </pre>
+    )
+  }
+}
 
 export default function SinglePost(){
 
     const [singlePost, setSinglePost] = useState(null);
+    console.log(singlePost)
     const { slug } = useParams();
 
     useEffect(()=> {
@@ -62,6 +72,7 @@ export default function SinglePost(){
                 className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full"
                 >
                     <BlockContent 
+                        serializers={serializers}
                         blocks={singlePost.body} 
                         projectID="3qxytl5i" 
                         dataset="production"
