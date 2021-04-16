@@ -32,7 +32,7 @@ export default function Post(){
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData &&
                         postData.map((post, index)=>(
-                        <article>
+                        <article key={post.slug.current}>
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                         <span 
                             className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
@@ -46,7 +46,7 @@ export default function Post(){
                             <span 
                                 className="block relative h-full flex justify-end items-end pr-4 pb-4">
                                 <h3 
-                                    className="text-grey-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded" 
+                                    className="text-grey-800 text-lg font-bold px-3 py-4 bg-green-700 text-red-100 bg-opacity-75 rounded" 
                                 >
                                     {post.title}
                                 </h3>
