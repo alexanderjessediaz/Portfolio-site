@@ -5,9 +5,11 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react"
 
 const builder = imageUrlBuilder(sanityClient);
+
 function urlFor(source) {
     return builder.image(source)
 }
+
 const serializers = {
   types: {
     code: props => (
@@ -19,9 +21,7 @@ const serializers = {
 }
 
 export default function SinglePost(){
-
     const [singlePost, setSinglePost] = useState(null);
-    console.log(singlePost)
     const { slug } = useParams();
 
     useEffect(()=> {

@@ -14,7 +14,7 @@ export default function Project(){
             link,
             tags
         }`).then((data)=> setProjectData(data))
-        .catch(console.error);
+        .catch((error) => console.log(error));
     }, []);
     return(
         <main className="bg-green-100 min-h-screen p-12">
@@ -69,4 +69,4 @@ export default function Project(){
             </section>
         </main>
     )
-}
+};
