@@ -31,6 +31,12 @@ export default {
       options: {
         hotspot: true,
       },
+     
+    },
+    {
+      name: "code",
+      type: "code",
+      title: "code editor"
     },
     {
       name: 'categories',
