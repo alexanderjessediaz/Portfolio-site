@@ -42,7 +42,7 @@ export default function Home(){
                             Hey there, I'm{" "}
                             <span className="text-green-100">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-white">
+                        <div className="font-mono prose lg:prose-xl text-white">
                         <BlockContent 
                         blocks={author.bio} 
                         projectID="3qxytl5i" 
