@@ -29,7 +29,7 @@ export default function NavBar(){
                         Projects
                     </NavLink>
                 </nav>
-                <div className="inline-flex py-3 px-3 my-6 justify-between">
+                <div className="inline-flex space-x-2 p-3 my-6">
                     <SocialIcon 
                         url="https://twitter.com/Alexanderjdiazz" 
                         className="" 
