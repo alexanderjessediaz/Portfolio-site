@@ -28,13 +28,6 @@ export default function NavBar(){
                     >
                         Projects
                     </NavLink>
-                    <NavLink
-                        to="/about" 
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-100 hover:text-green-800"
-                        activeClassName="text-green-100 bg-green-700"
-                    >
-                        About me!
-                    </NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6 justify-between">
                     <SocialIcon 
