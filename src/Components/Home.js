@@ -30,19 +30,19 @@ export default function Home(){
 
     return (
         <main className="relative flex justify-center">
-            <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+            <div className="p-10 lg:pt-18 container mx-auto relative">
+                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-5  lg:p-20">
                     <img 
                         src={urlFor(author.authorImage).url()} 
-                        className="rounded w-32 h-32 lg:w-48 lg:h-80 mr-8"
+                        className="hidden lg:block rounded w-32 h-32 lg:w-48 lg:h-80 mr-8"
                         alt={author.name}
                     />
                     <div className="text-lg flex flex-col justify-center">
-                        <h1 className="font-mono text-4xl text-green-300 mb-4">
+                        <h1 className="font-mono text-xl lg:text-4xl text-green-300 mb-4">
                             Hey there, I'm{" "}
                             <span className="text-green-100">{author.name}</span>
                         </h1>
-                        <div className="font-mono prose lg:prose-xl text-white">
+                        <div className="font-mono prose  lg:prose-xl text-white">
                         <BlockContent 
                         blocks={author.bio} 
                         projectID="3qxytl5i" 
