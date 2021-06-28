@@ -30,7 +30,7 @@ export default function Home(){
 
     return (
         <main className="relative flex justify-center">
-            <div className="p-10 lg:pt-48 container mx-auto relative">
+            <div className="p-10 lg:pt-18 container mx-auto relative">
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-5  lg:p-20">
                     <img 
                         src={urlFor(author.authorImage).url()} 

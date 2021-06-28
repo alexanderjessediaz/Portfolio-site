@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 export default function NavBar(){
     return (
         <header className="bg-green-800">
-            <div className="container mx-auto flex flex-wrap justify-between">
+            <div className="container mx-auto flex flex-wrap justify-center lg:justify-between">
                 <nav className="flex space-x-4">
                     <NavLink
                         to="/"
@@ -16,20 +16,20 @@ export default function NavBar(){
                     </NavLink>
                     <NavLink 
                         to="/post" 
-                        className="inline-flex text-lg items-center my-1 md:my-3 lg:my-6 my-6 rounded text-red-100 hover:text-blue-400"
+                        className="inline-flex text-xl items-center my-1 md:my-3 lg:my-6 my-6 rounded text-red-100 hover:text-blue-400"
                         activeClassName="text-green-100 bg-green-700"
                     >   
                         Blog Posts
                     </NavLink>
                     <NavLink 
                         to="/project"
-                        className="inline-flex items-center text-lg my-1 md:my-3 lg:my-6 my-6 rounded text-red-100 hover:text-blue-400"
+                        className="inline-flex items-center text-xl my-1 md:my-3 lg:my-6 my-6 rounded text-red-100 hover:text-blue-400"
                         activeClassName="text-green-100 bg-green-700"
                     >
                         Projects
                     </NavLink>
                 </nav>
-                <div className="inline-flex space-x-2 p-3 my-1 md:my-3 lg:my-6">
+                <div className="inline-flex space-x-6 p-3 my-1 md:my-3 lg:my-6">
                     <SocialIcon 
                         url="https://twitter.com/Alexanderjdiazz" 
                         className="" 
