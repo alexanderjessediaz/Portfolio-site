@@ -34,7 +34,7 @@ export default function Home(){
                 <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
                     <img 
                         src={urlFor(author.authorImage).url()} 
-                        className="rounded w-32 h-32 lg:w-48 lg:h-80 mr-8"
+                        className="hidden lg:block rounded w-32 h-32 lg:w-48 lg:h-80 mr-8"
                         alt={author.name}
                     />
                     <div className="text-lg flex flex-col justify-center">
