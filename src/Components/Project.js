@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
-import '../Styles/projects.css'
+import '../Styles/projects.css';
 
 export default function Project(){
     const [projectData, setProjectData] = useState(null);
