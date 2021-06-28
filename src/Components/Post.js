@@ -28,14 +28,17 @@ export default function Post(){
     return(
         <main className="bg-green-100 min-h-screen p-12" id="top-main">
             <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">Blogs</h1>
+                <span 
+                className="block relative h-full flex justify-center items-end pr-4 pb-4">
+                    <h1 className="text-5xl flex justify-center cursive p-4 bg-green-700 text-red-100 rounded bg-opacity-75">Blogs</h1>
+                </span>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData &&
                         postData.map((post, index)=>(
                         <article key={post.slug.current}>
                         <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                         <span 
-                            className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                            className="block h-64 relative rounded shadow leading-snug"
                             key={index}
                             >
                             <img

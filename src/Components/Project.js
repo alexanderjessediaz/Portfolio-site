@@ -20,7 +20,10 @@ export default function Project(){
     return(
         <main className="bg-green-100 min-h-screen p-12" id="top-main">
             <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
+            <span 
+                className="block relative h-full flex justify-center items-end pr-4 pb-4">
+                <h1 className="text-5xl flex justify-center cursive p-4 bg-green-700 text-red-100 rounded bg-opacity-75">My Projects</h1>
+                </span>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && projectData.map((project,index)=> (
                     <article className="relative rounded-lg shadow-xl bg-white p-16">
