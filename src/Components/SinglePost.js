@@ -39,14 +39,12 @@ export default function SinglePost(){
     if (!singlePost) return <div>Loading...</div>;
     return (
         <main className="bg-gray-200 min-h-screen p-12" id="top-main">
-            <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
-                <header className="relative">
-                    <div className="absolute h-full w-full flex items-center justify-center p-8">
-                    </div>
+            <article className="container shadow-lg mx-auto bg-green-100 rounded-lg ">
+                <header className="relative flex items-center justify-center">
                     <img 
                     src={singlePost.mainImage.asset.url} 
                     alt={singlePost.title} 
-                    className="w-full h-30 object-cover rounded-t" 
+                    className="max-w-sm max-h-sm object-scale-down rounded-t" 
                     />
                 </header>
                 <div 
