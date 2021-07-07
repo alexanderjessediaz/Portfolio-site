@@ -28,6 +28,13 @@ export default function NavBar(){
                     >
                         Projects
                     </NavLink>
+                    <NavLink 
+                        to="/resume"
+                        className="inline-flex items-center text-xl my-1 md:my-3 lg:my-6 my-6 rounded text-red-100 hover:text-blue-400"
+                        activeClassName="text-green-100 bg-green-700"
+                    >
+                        Resume
+                    </NavLink>
                 </nav>
                 <div className="inline-flex space-x-6 p-3 my-1 md:my-3 lg:my-6">
                     <SocialIcon 
@@ -65,7 +72,6 @@ export default function NavBar(){
                         fgColor="#fff" 
                         style={{ height:35, width: 35}} 
                     />
-                    
                 </div>
             </div>
         </header>
