@@ -26,12 +26,13 @@ export default function Project(){
                 </span>
                 <section className="lg:grid lg:auto-cols-min lg:grid-cols-2 gap-8">
                     {projectData && projectData.map((project,index)=> (
-                    <article className="relative rounded-lg shadow-xl bg-white p-16">
+                    <article key={index} className="relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-lg lg:text-3xl font-bold mb-2 hover:text-red-700">
                             <a
                             href={project.link}
                             alt={project.title}
                             target="_blank"
+                            
                             rel="noopener noreferrer"
                             >{project.title}</a>
                         </h3>

@@ -39,7 +39,7 @@ export default function SinglePost(){
     if (!singlePost) return <div>Loading...</div>;
     return (
         <main className="bg-gray-200 min-h-screen p-12" id="top-main">
-            <article className="container shadow-lg mx-auto bg-green-100 rounded-lg ">
+            <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
                 <header className="relative flex items-center justify-center">
                     <img 
                     src={singlePost.mainImage.asset.url} 
