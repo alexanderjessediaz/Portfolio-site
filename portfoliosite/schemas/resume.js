@@ -5,19 +5,14 @@ export default {
     type: 'document',
     fields: [
         {
-            name: 'resume_name',
-            title: 'Resume Name',
+            name: 'title',
             type: 'string',
+            title: 'Title',
         },
         {
-            name: "date",
-            type: "datetime",
-        },
-        {
-            name: 'mainImage',
-            title: 'Main Image',
-            type: 'image',
-            options: {hotspot: true}
+            name: 'resumepdf',
+            title: 'Resume File',
+            type: 'file',
         }
     ]
 }

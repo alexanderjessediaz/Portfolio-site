@@ -4,7 +4,7 @@ import SinglePost from "./Components/SinglePost";
 import Post from "./Components/Post";
 import Project from "./Components/Project";
 import NavBar from "./Components/NavBar";
-import Resume from "./Components/Resume"
+import Resume from "./Components/Resume";
 
 function App() {
   return (
