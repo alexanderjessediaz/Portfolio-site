@@ -42,18 +42,21 @@ export default function Home(){
                             Hey there, I'm{" "}
                             <span className="text-green-100">{author.name}</span>
                         </h1>
-                        <div className="cursive prose  lg:prose-xl text-white">
-                        <BlockContent 
-                        blocks={author.bio} 
-                        projectID="3qxytl5i" 
-                        dataset="production"
-                    />
+                        <div className="cursive prose lg:prose-xl text-white">
+                            <BlockContent 
+                                blocks={author.bio} 
+                                projectID="3qxytl5i" 
+                                dataset="production"
+                            />
+                            <small className="cursive prose lg:prose-xl text-white">
+                                Feel free to drop me an email at:<a
+                                    id="welcome-email"
+                                    href="mailto: alexanderjessediaz@gmail.com" alt="alexanderjessediaz@gmail.com">alexanderjessediaz@gmail.com</a>
+                            </small>
                         </div>
                     </div>
                 </section>
             </div>
-        
-        </main>
-        
+        </main>  
     )
 }
