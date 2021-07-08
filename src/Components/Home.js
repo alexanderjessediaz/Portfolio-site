@@ -49,7 +49,7 @@ export default function Home(){
                                 dataset="production"
                             />
                             <small className="cursive prose lg:prose-xl text-white">
-                                Feel free to drop me an email at:<a
+                                Feel free to drop me an email at <a
                                     id="welcome-email"
                                     href="mailto: alexanderjessediaz@gmail.com" alt="alexanderjessediaz@gmail.com">alexanderjessediaz@gmail.com</a>
                             </small>
