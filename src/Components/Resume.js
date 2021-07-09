@@ -29,11 +29,6 @@ export default function Resume(){
                     style={{height:"50rem"}}
                 >
                 </object>
-                {/* <embed
-                    className="min-h-full w-auto md:w-3/4 lg:w-2/4"
-                    src={myResume}
-                    style={{height:"50rem"}}
-                ></embed> */}
             </div>
         </main>
     )
