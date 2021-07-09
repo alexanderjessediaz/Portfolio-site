@@ -24,7 +24,7 @@ export default function Project(){
                 className="block relative h-full flex justify-center items-end pr-4 pb-4">
                 <h1 className="text-5xl flex justify-center cursive p-4 bg-green-700 text-red-100 rounded bg-opacity-75">My Projects</h1>
                 </span>
-                <section className="lg:grid lg:auto-cols-min lg:grid-cols-2 gap-8">
+                <section className="space-y-4 lg:grid lg:auto-cols-min lg:grid-cols-2 gap-8">
                     {projectData && projectData.map((project,index)=> (
                     <article key={index} className="relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-lg lg:text-3xl font-bold mb-2 hover:text-red-700">
